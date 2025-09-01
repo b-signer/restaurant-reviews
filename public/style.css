@@ -1,0 +1,103 @@
+body {
+  background-color: #2f2f2f; /* slate gray */
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #c3a6ff; /* purple accent */
+  text-align: center;
+}
+
+form, .review-list {
+  background: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #555;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #c3a6ff;
+  border: none;
+  color: #2f2f2f;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #a884e3;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 28px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.star.selected {
+  color: #c3a6ff; /* purple accent */
+}
+
+.review {
+  border-bottom: 1px solid #555;
+  padding: 15px 0;
+}
+
+.review h2 {
+  margin: 0;
+  color: #c3a6ff;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #c3a6ff;
+  color: #2f2f2f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  margin: 20px auto;
+}
+
+a.button:hover {
+  background-color: #a884e3;
+}
+

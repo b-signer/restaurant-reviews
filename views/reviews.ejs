@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Reviews</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Submitted Reviews</h1>
+
+  <a href="/" class="button">➕ Add another review</a>
+
+  <% if (reviews.length === 0) { %>
+    <p>No reviews yet. Be the first!</p>
+  <% } else { %>
+    <div class="review-list">
+      <% reviews.forEach(r => { %>
+        <div class="review">
+          <h2><%= r.restaurant %> (<%= r.city %>)</h2>
+          <p><strong>Date:</strong> <%= r.visit_date.toISOString().split('T')[0] %></p>
+          <p><strong>Rating:</strong> <%= "★".repeat(r.rating) %></p>
+          <% if (r.comments) { %>
+            <p><strong>Comments:</strong> <%= r.comments %></p>
+          <% } %>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</body>
+</html>
